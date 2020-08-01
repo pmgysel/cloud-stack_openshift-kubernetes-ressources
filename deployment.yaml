@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: spring-boot-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: spring-boot-app
+    spec:
+      containers:
+      - name: spring-boot-app
+        image: pmgysel/spring-boot-app:0.0.1
+        ports:
+        - containerPort: 8080
