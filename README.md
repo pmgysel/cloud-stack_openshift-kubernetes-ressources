@@ -1,6 +1,6 @@
 # Deploy simple app on OpenShift
 
-This repo contains all Kubernetes ressources necessary to deploy a Docker image from Docker Hub to OpenShift.
+This repo contains all Kubernetes resources necessary to deploy a Docker image from Docker Hub to OpenShift.
 
 Docker image: https://hub.docker.com/r/pmgysel/spring-boot-app
 
@@ -27,7 +27,7 @@ Choose your preferred project:
 $ oc project <YOUR_OS_PROJECT>
 ```
 
-Upload all Kubernetes ressources:
+Upload all Kubernetes resources:
 ```shell
 $ oc apply -f deployment.yaml
 $ oc apply -f service.yaml
